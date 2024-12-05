@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start Page</title>
+    <title>You Are Hacked</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: black;
+            color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 5rem;
+            text-shadow: 2px 2px 5px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+            animation: flicker 1.5s infinite;
+        }
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Start Page!</h1>
-    <p>This is your custom page at /startPage.</p>
+    <div>
+        <h1>YOU ARE HACKED!</h1>
+        <p>This is what happens when you are redirected to a malicious site.<br>Be cautious of open redirects!</p>
+    </div>
 </body>
 </html>
