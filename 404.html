@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // Redirect non-www traffic to www
+        if (window.location.hostname === "bughunting.tech") {
+            window.location.replace("https://www.bughunting.tech" + window.location.pathname);
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to <a href="https://www.bughunting.tech">www.bughunting.tech</a>...</p>
+</body>
+</html>
